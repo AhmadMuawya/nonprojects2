@@ -1,0 +1,121 @@
+/* QrGenerator.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the QR Generator */
+.qr-generator-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Title Styling */
+.qr-generator-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Input Field Styling */
+.qr-generator-container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.qr-generator-container input[type="text"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+.qr-generator-container input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.qr-generator-container input[type="email"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+
+/* QR Code Display Area */
+.qr-code-display {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button Styling */
+.qr-generator-container button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.qr-generator-container button:hover {
+    background-color: #1a5986;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+    .qr-generator-container {
+        padding: 20px;
+    }
+
+    .qr-generator-container h1 {
+        font-size: 20px;
+    }
+
+    .qr-generator-container button {
+        width: 100%;
+    }
+}
+
+/* Wrapper for the QR code and logo */
+.qr-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Logo styling */
+.qr-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; /* Adjust the size of the logo as needed */
+    height: 50px;
+    border-radius: 8px; /* Optional: Rounded corners for the logo */
+}
